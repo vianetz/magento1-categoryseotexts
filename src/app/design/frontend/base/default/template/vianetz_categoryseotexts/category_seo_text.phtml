@@ -1,0 +1,6 @@
+<?php /** @var \Vianetz_CategorySeoTexts_Block_Categoryseotext $this */ ?>
+<?php if($customAttribute = $this->getCurrentCategory()->getSeoTextBottom()): ?>
+<div id="categoryTextBottom">
+    <?php echo $this->helper('catalog/output')->categoryAttribute($this->getCurrentCategory(), $customAttribute, 'seo_text_bottom') ?>
+</div>
+<?php endif; ?>

@@ -1,0 +1,4 @@
+src/app/etc/modules/Vianetz_CategorySeoTexts.xml                            app/etc/modules/Vianetz_CategorySeoTexts.xml
+src/app/code/community/Vianetz/CategorySeoTexts/                            app/code/community/Vianetz/CategorySeoTexts/
+src/app/design/frontend/base/default/layout/vianetz_categoryseotexts.xml    app/design/frontend/base/default/layout/vianetz_categoryseotexts.xml
+src/app/design/frontend/base/default/template/vianetz_categoryseotexts      app/design/frontend/base/default/template/vianetz_categoryseotexts

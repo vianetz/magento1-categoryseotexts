@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <catalog_category_default>
+        <reference name="content">
+            <block type="vianetz_categoryseotexts/categoryseotext" name="vianetz_category_seo_text" template="vianetz_categoryseotexts/category_seo_text.phtml" after="category.products" />
+        </reference>
+    </catalog_category_default>
+
+    <catalog_category_layered>
+        <reference name="content">
+            <block type="vianetz_categoryseotexts/categoryseotext" name="vianetz_category_seo_text" template="vianetz_categoryseotexts/category_seo_text.phtml" after="category.products" />
+        </reference>
+    </catalog_category_layered>
+</layout>
