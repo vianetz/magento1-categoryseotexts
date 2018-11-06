@@ -19,20 +19,11 @@
  */
 
 /**
- * @var \Mage_Catalog_Model_Resource_Setup $this
+ * @var \Mage_Catalog_Model_Resource_Setup $installer
  */
 $this->startSetup();
 
-$this->addAttribute(Mage_Catalog_Model_Category::ENTITY, 'seo_text_bottom', array(
-    'group' => 'General Information',
-    'input' => 'textarea',
-    'type' => 'text',
-    'label' => 'SEO Text (bottom)',
-    'backend' => '',
-    'visible' => true,
-    'required' => false,
-    'visible_on_front' => true,
-    'global' => Mage_Catalog_Model_Resource_Eav_Attribute::SCOPE_STORE,
-));
+$categoryEntityTypeId = $this->getEntityTypeId('catalog_category');
+$this->updateAttribute($categoryEntityTypeId, 'seo_text_bottom', 'is_wysiwyg_enabled', 1);
 
 $this->endSetup();
